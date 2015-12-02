@@ -1,7 +1,27 @@
 {
-  "name": "Progress",
-  "private": true,
+  "name": "br-progress",
+  "version": "1.0.0",
+  "homepage": "https://github.com/marcelo-ribeiro/br-progress",
+  "authors": [
+    "marcelo-ribeiro <marceloribeiromidia@gmail.com>"
+  ],
+  "description": "",
+  "main": "br-progress.html",
+  "keywords": [
+    "webcomponents",
+    "polymer",
+    "bedrock",
+    "progress bar"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.1.2"
+    "bedrock-base": "~1.0.0"
   }
 }
