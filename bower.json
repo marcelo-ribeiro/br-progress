@@ -1,0 +1,7 @@
+{
+  "name": "Progress",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.2"
+  }
+}

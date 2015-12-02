@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>br-progress Demo</title>
+
+  <style>
+    html {
+      font: 16px/1.25 'Roboto', Arial;
+      color: rgba(0,0,0,0.8);
+      background: rgba(0,0,0,0.025);
+    }
+    body {
+      margin: 2rem;
+    }
+    .any-progress {
+      height: 16px;
+      font-size: 12px;
+    }
+  </style>
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <link rel="import" href="bower_components/polymer/polymer.html">
+  <link rel="import" href="br-progress.html">
+  
+</head>
+
+<body>
+
+  <h1>&lt;br-progress/&gt;</h1>
+  
+  <br>
+  
+  <p>An example of br-progress:</p>
+  
+  <br-progress class="html" label="HTML5" value="100" color="#e34f26"></br-progress>
+  
+  <br-progress class="css" label="CSS3" value="100" color="#1572B6"></br-progress>
+  
+  <br-progress class="sass" label="Sass" value="80" color="#c6538c"></br-progress>
+  
+  <br-progress class="less" label="Less" value="80" color="#1d365d"></br-progress>
+  
+  <br-progress class="js" label="Javascript" value="60" color="#F8DC3D"></br-progress>
+  
+  <br-progress class="angular" label="Angular" value="60" color="#b52e31"></br-progress>
+  
+  <br-progress class="jquery" label="JQuery" value="60" color="#0769AD"></br-progress>
+  
+  <br-progress class="polymer" label="Polymer" value="80" color="#d81b60"></br-progress>
+  
+  <br>
+
+  <p>An example of br-progress whitout label and color attribute:</p>
+
+  <br-progress class="any-progress" value="40"></br-progress>
+
+</body>
+</html>

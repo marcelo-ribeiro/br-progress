@@ -1,0 +1,53 @@
+<!--
+##### Example
+
+    <br-progress></br-progress>
+
+@element br-progress
+@demo demo/index.html
+-->
+
+<dom-module name="br-progress">
+  <link rel="import" type="css" href="br-progress.css">
+  
+  <template>
+    <div id="progressValue" class="progress--value" style$="{{computedBarStyle}}">
+      <span class="progress--label">{{label}}</span>
+      <span class="progress--percentage">{{value}}%</span>
+    </div>
+  </template>
+  
+  <script>
+    Polymer({
+      is: 'br-progress',
+      properties: {
+        max: {
+          type: Number,
+          value: 100
+        },
+        value: Number,
+        label: String,
+        color: String,
+        computedValue: {
+          type: Number,
+          computed: '_computeValue(max,value)'
+        }
+      },
+
+      ready: function() {
+        var computedBarStyle = '';
+        this._computeBarStyle();
+      },
+      
+      _computeValue: function(max, value) {
+        return value / max * 100;
+      },
+      
+      _computeBarStyle: function() {
+        this.computedBarStyle  = 'background-color:' + this.color + ';';
+        this.computedBarStyle += 'width:' + this.computedValue + '%;';
+      }
+      
+    });
+  </script>
+</dom-module>
